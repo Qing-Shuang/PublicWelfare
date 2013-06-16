@@ -231,8 +231,7 @@
     <Content Include="Content\Style_Button.css" />
     <Content Include="Content\Style_Form.css" />
     <Content Include="Content\Style_Table.css" />
-    <Content Include="Content\副本 Style_Work.css" />
-    <Content Include="Content\副本 副本 Style_Work.css" />
+    <Content Include="Content\Style_Work_1.css" />
     <Content Include="Global.asax" />
     <Content Include="Images\Activity\Activity_01.jpg" />
     <Content Include="Images\Activity\Activity_02.jpg" />

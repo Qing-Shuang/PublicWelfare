@@ -5,8 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title>红会-活动列表</title>
-    <link href="<%=Url.Content("~/Content/bootstrap.min.css") %>" rel="stylesheet"/>
-    <link rel="stylesheet" type="text/css" href="<%=Url.Content("~/Content/副本 Style_Work.css") %>" />
+    <link rel="stylesheet" type="text/css" href="<%=Url.Content("~/Content/bootstrap.min.css") %>"/>
+    <link rel="stylesheet" type="text/css" href="<%=Url.Content("~/Content/Style_Work_1.css") %>" />
     <link rel="stylesheet" type="text/css" href="<%=Url.Content("~/Content/Style_Base_2.css") %>" />
 </head>
 <body>
