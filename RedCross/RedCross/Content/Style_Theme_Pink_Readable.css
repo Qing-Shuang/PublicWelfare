@@ -1,0 +1,25 @@
+﻿/* File Created: 七月 7, 2012 */
+
+#header
+{
+    background-image:none;
+    background-color:#fdbbba;
+    border-bottom: 1px solid #7F8486;
+}
+
+#tabwrapper a
+{
+    color: #2b343c;     
+}
+
+#divider
+{
+    background-image:none;
+	background-color:#fddcba; 
+    border-top: 1px solid #fff;/*7F8486*/
+}
+
+#divider a
+{
+    color: #2b343c; 
+}

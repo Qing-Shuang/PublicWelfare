@@ -1,0 +1,19 @@
+﻿/* File Created: 四月 29, 2012 */
+    /*margin:外边距*/
+    /*padding:内边距*/
+
+#Article_left
+{
+    width:73%;
+    border-right:1px solid #d0d0d0;
+    height:750px;
+    float:left;
+    padding-right:10px;
+}
+
+#Article_right
+{
+    width:25%;
+    float:right;
+    padding-left:5px;
+}

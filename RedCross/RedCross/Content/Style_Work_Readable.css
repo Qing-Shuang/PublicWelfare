@@ -1,0 +1,13 @@
+﻿/* File Created: 八月 4, 2012 */
+.work .subwork
+{
+     display:none;   
+     border:1px solid #ddd; 
+     background-color:White;
+}
+
+.work a:hover .subwork
+{
+    display:block;
+}
+

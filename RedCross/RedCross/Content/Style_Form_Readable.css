@@ -1,0 +1,207 @@
+﻿    /*margin:外边距*/
+    /*padding:内边距*/
+     
+    #info_frame
+    {
+    	margin:0 auto;
+		width:1000px;
+    }
+    
+    #info_left
+	{
+	   margin:0 0 20px 0;
+	   width:40%;
+	   height:530px;
+	   float:left;
+	}
+	
+	#info_left h1
+	{
+	    font-size:18px;
+		font-weight:bold;
+		/*border-bottom:solid 1px black;*/
+		text-align:left;
+	    margin-top:10px;
+	}
+    
+    #info_right
+	{
+       margin:auto 0;
+	   width:60%;
+	   float:right;
+	}
+    
+    #msg_refister_note
+    {
+        margin:auto;    
+        /*padding:auto;   */
+        width:350px;
+    }
+    
+	#info
+	{
+		border:solid 2px #b7ddf2;
+		background:#ebf4fb;	
+		margin:0 auto;
+		width:400px;
+		/*width:400px;
+		padding:14px;*/
+	}
+	
+	#info h1
+	{
+		font-size:18px;
+		font-weight:bold;
+		border-bottom:solid 1px #b7ddf2;
+		text-align:left;
+	    margin:10px 10px;
+	}
+
+    #info ol
+    {
+		 list-style:none;
+		 margin:0;
+		 padding:0;
+    }
+    
+    #info li
+    {
+        margin: .2em,0;
+        float:left;
+        width:100%;	
+    }
+    
+    #info label 
+    {
+    	  /*display:block;*/
+          float: left;
+          width: 40%;
+          text-align: right;
+          margin-right: 5%;
+          /*font-weight:bold;
+          font-size:18px;*/
+          margin-top:8px;
+          margin-bottom:8px;
+          font-size:96%;
+    }
+    
+    #info input#submit
+    {
+    	 clear:both;
+		 margin-left:45%;
+		 width:7em;	
+		 height:31px;
+		 background:#666666;
+		 text-align:center;
+		 color:#ffffff;
+		 font-weight:bold;
+    }
+    
+    #info input#SexM
+    {
+        font-family: inherit;
+	    font-size:100%;	
+        width:25px;
+        text-align:center;
+    }
+    
+    #info input#SexW
+    {
+        font-family: inherit;
+	    font-size:100%;	
+        width:25px;
+        text-align:center;
+    }
+    
+    #info input,#info select 
+    {
+	    font-family: inherit;
+	    font-size:100%;	
+	    width:157px;
+	    height:20px;
+	    border:solid 1px #aacfe4;
+	    margin:8px 0 8px;
+    }
+    
+    #info select 
+    {
+	    height:30px;
+    }
+    
+    #info legend#headline
+    {
+		color:#ab0000;
+	    font-size:135%;
+		margin:auto,0;
+		padding:0;	
+		text-align:center;
+    }
+    
+    #info p
+    {
+	    text-align:center;	
+    }
+    
+    #info fieldset
+    {
+    	border:solid 1px #b7ddf2;
+    }
+    
+    #info label#msg_register
+    {
+        text-align:left;	    
+        margin-left:45%;
+    }
+    
+    form
+    {
+        margin:3% 0;  
+    }
+    
+    #ErrFromServerVerify
+    {
+		color:#ff0000;
+    	font-size:100%;
+        margin-left:25px;
+    }
+    
+    #ErrFromServerVerify li
+    {
+		 list-style:none;
+		 width:180px;
+    }
+    
+    .Err
+    {
+    	margin-left:45%;
+    	color:#ff0000;
+    	font-size:80%;
+	}
+	
+	.ErrInput
+	{
+		border: 1px solid #ff0000; 
+		background-color: #ffeeee; 
+	}
+	
+	.NomalInput
+	{
+	    border:solid 1px #aacfe4;
+	    background-color: #ffffff; 
+	}
+	
+	.smallinfo
+	{
+	    margin: 5px 10px;    
+	}
+	
+	.smallinfo legend
+	{
+	    color:Black;    
+	}
+	
+	#login
+	{
+	    margin-top:150px;    
+	}
+    

@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="RedCross/Scripts/Rc/Verify.js">
+    <Files>
+      <File FileName="RedCross/Controllers/ActivityController.cs" Line="20" Column="36" />
+      <File FileName="RedCross/Scripts/Rc/Verify.js" Line="36" Column="19" />
+      <File FileName="RedCross/Scripts/Rc/VerifyNew.js" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

@@ -1,0 +1,36 @@
+﻿/* File Created: 四月 1, 2012 */
+#pager {
+	padding: 3px 3px; 
+	/*font-size:0.85em;*/
+    margin:3px;
+    text-align:center;
+}
+#pager a {
+	border:#ddd 1px solid;   /*3666d4*/
+    /*padding:2px 8px;*/
+    padding:10px 15px;
+    background-position:50% bottom;
+    color:#0061de; 
+    margin-right:3px;
+    text-decoration:none;
+}
+
+#pager a:hover {
+	color: #fff; 
+	border: #2b55af 1px solid; 
+	background-color:#3666d4;
+}
+
+#pager a:active {
+	color: #fff; 
+	border: #2b55af 1px solid; 
+	background-color:#3666d4;
+}
+
+#pager span{
+	FONT-WEIGHT: bold; 
+	COLOR: #000; 
+	MARGIN-RIGHT: 3px; 
+	padding:2px 6px;
+}
+

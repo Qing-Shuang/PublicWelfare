@@ -1,0 +1,11 @@
+﻿/* File Created: 十月 13, 2012 */
+
+#bottom
+{
+    clear:both;
+    border-top:1px solid #ddd;
+    margin:80px auto 0 auto;
+    text-align:center;
+    padding-top:10px;
+    width:700px;
+}

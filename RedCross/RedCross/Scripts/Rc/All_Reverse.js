@@ -1,0 +1,1 @@
+﻿function checkAllorInverse(f,c){var b;if(f.checked){b=true}else{b=false}var d=document.getElementById(c);var a=d.getElementsByTagName("input");for(var e=0;e<a.length;++e){if(a[e].type=="checkbox"){a[e].checked=b}}};

@@ -1,0 +1,1 @@
+﻿.work ul{margin:0;padding:0}.work li ul{display:none;border:1px solid #333}.work ul li{display:block;padding:5px 15px;white-space:pre-wrap;width:60px}.work li:hover ul{display:block;position:absolute;list-style:none}.work li:hover li{float:none;width:120px;font-size:12px}

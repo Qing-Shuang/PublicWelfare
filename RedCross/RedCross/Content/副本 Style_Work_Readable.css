@@ -1,0 +1,42 @@
+﻿/* File Created: 八月 4, 2012 */
+.work ul
+{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+.work li ul
+{
+     display:none;   
+     border:1px solid #555; 
+     width:250px;
+     background-color:White;
+}
+
+.work ul li 
+{
+    /*display:block;*/
+    /*padding:5px 10px;*/
+    /*white-space:pre-wrap;*/
+    /*width:60px;*/
+}
+
+.work li:hover ul
+{
+    padding:8px;
+    display:block;
+    position:absolute; 
+    list-style:none;
+    color:#08c;
+}
+
+.work li:hover li
+{
+    float:none;    
+    /*width:120px;*/
+    font-size:12px;
+    /*padding-left:5px;*/
+    /*height:30px;*/
+}
+

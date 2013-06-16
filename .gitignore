@@ -1,0 +1,4 @@
+Redcorss/Redcross/bin
+Redcross/Redcross/obj
+*.Debug.*
+*.Release.*

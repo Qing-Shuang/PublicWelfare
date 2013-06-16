@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B64F8ADD-2F35-434A-8F7C-2C27B729F54D}</ProjectGuid>
+    <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349C5851-65DF-11DA-9384-00065B846F21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RedCross</RootNamespace>
+    <AssemblyName>RedCross</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\服务终端机 1.3 版本\SocktetWindowsForms\LibConnectToDB\LibConnectToDB\bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Abstractions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Routing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mobile">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\ActivityController.cs" />
+    <Compile Include="Controllers\ArticleController.cs" />
+    <Compile Include="Controllers\CookieFactory.cs" />
+    <Compile Include="Controllers\DepartmentController.cs" />
+    <Compile Include="Controllers\FamilyController.cs" />
+    <Compile Include="Controllers\GenericTest.cs" />
+    <Compile Include="Controllers\ImportantEventController.cs" />
+    <Compile Include="Controllers\MineController.cs" />
+    <Compile Include="Controllers\NoticeController.cs" />
+    <Compile Include="Controllers\OtherController.cs" />
+    <Compile Include="Controllers\TimeTableController.cs" />
+    <Compile Include="Controllers\UserAuthorizeAttribute.cs" />
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Controllers\VisitController.cs" />
+    <Compile Include="Controllers\WorkController.cs" />
+    <Compile Include="DAL\ActivityDAL.cs" />
+    <Compile Include="DAL\ArticleDAL.cs" />
+    <Compile Include="DAL\AuthDAL.cs" />
+    <Compile Include="DAL\BaseDALPool.cs" />
+    <Compile Include="DAL\CollageDAL.cs" />
+    <Compile Include="DAL\BaseDAL.cs" />
+    <Compile Include="DAL\DepDAL.cs" />
+    <Compile Include="DAL\FamilyDAL.cs" />
+    <Compile Include="DAL\GrdDAL.cs" />
+    <Compile Include="DAL\ImportantEventDAL.cs" />
+    <Compile Include="DAL\NoticeDAL.cs" />
+    <Compile Include="DAL\PoolUtil.cs" />
+    <Compile Include="DAL\RoleDal.cs" />
+    <Compile Include="DAL\TestDAL.cs" />
+    <Compile Include="DAL\TimeTableDAL.cs" />
+    <Compile Include="DAL\UserDAL.cs" />
+    <Compile Include="DAL\VisitDAL.cs" />
+    <Compile Include="DAL\WorkDAL.cs" />
+    <Compile Include="GLB.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HtmlHelperPager.cs" />
+    <Compile Include="Log\Level.cs" />
+    <Compile Include="Log\LogQueue.cs" />
+    <Compile Include="Log\LogWriterFile.cs" />
+    <Compile Include="Log\LogWriterQueue.cs" />
+    <Compile Include="Log\RecordModel.cs" />
+    <Compile Include="Models\BusinessModels\ActivityService.cs" />
+    <Compile Include="Models\BusinessModels\ArticelService.cs" />
+    <Compile Include="Models\BusinessModels\AuthService.cs" />
+    <Compile Include="Models\BusinessModels\DepartmentService.cs" />
+    <Compile Include="Models\BusinessModels\ErrorMsg.cs" />
+    <Compile Include="Models\BusinessModels\FamilyService.cs" />
+    <Compile Include="Models\BusinessModels\ImportantEventService.cs" />
+    <Compile Include="Models\BusinessModels\NoticeService.cs" />
+    <Compile Include="Models\BusinessModels\ResponseStatus.cs" />
+    <Compile Include="Models\BusinessModels\RuleMessage.cs" />
+    <Compile Include="Models\BusinessModels\Service.cs" />
+    <Compile Include="Models\BusinessModels\TimeTableService.cs" />
+    <Compile Include="Models\BusinessModels\UserService.cs" />
+    <Compile Include="Models\BusinessModels\VerifyUtil.cs" />
+    <Compile Include="Models\BusinessModels\VerifyUtil2.cs" />
+    <Compile Include="Models\BusinessModels\VisitService.cs" />
+    <Compile Include="Models\BusinessModels\WorkService.cs" />
+    <Compile Include="Models\Entities\Base\Family.cs" />
+    <Compile Include="Models\Entities\Base\ImportantEvent.cs" />
+    <Compile Include="Models\Entities\Base\MessageModel.cs" />
+    <Compile Include="Models\Entities\Base\ActivityWorks.cs" />
+    <Compile Include="Models\Entities\Base\Visit.cs" />
+    <Compile Include="Models\Entities\Base\Work.cs" />
+    <Compile Include="Models\Entities\Base\Activity.cs" />
+    <Compile Include="Models\Entities\Base\Article.cs" />
+    <Compile Include="Models\Entities\Base\Collage.cs" />
+    <Compile Include="Models\Entities\Base\Department.cs" />
+    <Compile Include="Models\Entities\Base\Grade.cs" />
+    <Compile Include="Models\Entities\Base\Notice.cs" />
+    <Compile Include="Models\Entities\Base\Role.cs" />
+    <Compile Include="Models\Entities\Base\UserFreeTime.cs" />
+    <Compile Include="Models\Entities\Container\Container_Activity.cs" />
+    <Compile Include="Models\Entities\Container\Container_Authority_Msg.cs" />
+    <Compile Include="Models\Entities\Container\Container_Department.cs" />
+    <Compile Include="Models\Entities\Container\Container_Family.cs" />
+    <Compile Include="Models\Entities\Container\Container_ImportantEvent.cs" />
+    <Compile Include="Models\Entities\Container\Container_List_Activity.cs" />
+    <Compile Include="Models\Entities\Container\Container_Article_Detail.cs" />
+    <Compile Include="Models\Entities\Container\Container_List_Department.cs" />
+    <Compile Include="Models\Entities\Container\Container_ErrMsg.cs" />
+    <Compile Include="Models\Entities\Container\Container_List_Family.cs" />
+    <Compile Include="Models\Entities\Container\Container_List_ImportantEvent.cs" />
+    <Compile Include="Models\Entities\Container\Container_List_Article.cs" />
+    <Compile Include="Models\Entities\Container\Container_List_FreeTime.cs" />
+    <Compile Include="Models\Entities\Container\Container_List_Notice.cs" />
+    <Compile Include="Models\Entities\Container\Container_List_Visit.cs" />
+    <Compile Include="Models\Entities\Container\Container_Notice.cs" />
+    <Compile Include="Models\Entities\Container\Container_TimeTables_UserBases.cs" />
+    <Compile Include="Models\Entities\Container\Container_List_Status.cs" />
+    <Compile Include="Models\Entities\Container\Container_list_UserStatus.cs" />
+    <Compile Include="Models\Entities\Container\Container_List_User_TimeTable.cs" />
+    <Compile Include="Models\Entities\Container\Container_Notices_MyWorks_TeamWorks_Activities.cs" />
+    <Compile Include="Models\Entities\Container\Container_List_ActivityWorks.cs" />
+    <Compile Include="Models\Entities\Container\Container_List_Works.cs" />
+    <Compile Include="Models\Entities\Container\Container_UWork.cs" />
+    <Compile Include="Models\Entities\Container\Container_Visit.cs" />
+    <Compile Include="Models\Entities\Other\Paginate.cs" />
+    <Compile Include="Models\Entities\Other\TmTab_ResearchCon.cs" />
+    <Compile Include="Models\Entities\Base\UserBase.cs" />
+    <Compile Include="Models\Entities\Base\UserStatus.cs" />
+    <Compile Include="Models\Entities\Base\TimeTable.cs" />
+    <Compile Include="Models\Entities\Base\UserTimeTable.cs" />
+    <Compile Include="Models\Interfaces\IActivityService.cs" />
+    <Compile Include="Models\Interfaces\IArticleService.cs" />
+    <Compile Include="Models\Interfaces\IAuthService.cs" />
+    <Compile Include="Models\Interfaces\IDepartmentService.cs" />
+    <Compile Include="Models\Interfaces\IFamilyService.cs" />
+    <Compile Include="Models\Interfaces\IImportantEventService.cs" />
+    <Compile Include="Models\Interfaces\INoticeService.cs" />
+    <Compile Include="Models\Interfaces\ITimeTableService.cs" />
+    <Compile Include="Models\Interfaces\IUserService.cs" />
+    <Compile Include="Models\Interfaces\IVisitService.cs" />
+    <Compile Include="Models\Interfaces\IWorkService.cs" />
+    <Compile Include="Models\MD5Factory.cs" />
+    <Compile Include="Models\ServiceBuilder.cs" />
+    <Compile Include="m_HtmlHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\BusinessModels\Verify.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Style_Base_2.css" />
+    <Content Include="Content\Style_Bottom.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Style_Work.css" />
+    <Content Include="Content\602634541.css" />
+    <Content Include="Content\Style_Theme_Pink.css" />
+    <Content Include="Content\Style_Art_Dta.css" />
+    <Content Include="Content\Style_Article.css" />
+    <Content Include="Content\Style_Pager.css" />
+    <Content Include="Content\Style_Base.css" />
+    <Content Include="Content\Style_Button.css" />
+    <Content Include="Content\Style_Form.css" />
+    <Content Include="Content\Style_Table.css" />
+    <Content Include="Content\副本 Style_Work.css" />
+    <Content Include="Content\副本 副本 Style_Work.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\Activity\Activity_01.jpg" />
+    <Content Include="Images\Activity\Activity_02.jpg" />
+    <Content Include="Images\Activity\Activity_03.jpg" />
+    <Content Include="Images\Family\Family_01.jpg" />
+    <Content Include="Images\Family\Family_02.jpg" />
+    <Content Include="Images\Family\Family_03.jpg" />
+    <Content Include="Images\Index_01.jpg" />
+    <Content Include="Images\Index_02.jpg" />
+    <Content Include="Images\Index_03.jpg" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\niu.jpg" />
+    <Content Include="Images\background.gif" />
+    <Content Include="Images\banner_bg.png" />
+    <Content Include="Images\divider_bg.png" />
+    <Content Include="Images\footer-gradient.gif" />
+    <Content Include="Images\process1.jpg" />
+    <Content Include="Images\Share.Curiosity 5.png" />
+    <Content Include="Images\sumiao1.jpg" />
+    <Content Include="Images\北师大校红十字会 3.png" />
+    <Content Include="Images\安达充.jpg" />
+    <Content Include="Images\安达充3.jpg" />
+    <Content Include="img\glyphicons-halflings-white.png" />
+    <Content Include="img\glyphicons-halflings.png" />
+    <Content Include="Scripts\Rc\ActivityVerify.js" />
+    <Content Include="Scripts\Rc\ApplyVerify.js" />
+    <Content Include="Scripts\Rc\DepartmentVerify.js" />
+    <Content Include="Scripts\Rc\FamilyVerify.js" />
+    <Content Include="Scripts\Rc\ImportantVerify.js" />
+    <Content Include="Scripts\Rc\NoticeVerify.js" />
+    <Content Include="Scripts\Rc\SyncOption.js" />
+    <Content Include="Scripts\Rc\LogOut.js" />
+    <Content Include="Scripts\Rc\All_Reverse.js" />
+    <Content Include="Scripts\Rc\Form_Login.js" />
+    <Content Include="Scripts\Rc\Form_Register.js" />
+    <Content Include="Scripts\Rc\Form_Register1.js" />
+    <Content Include="Scripts\Rc\TableStruc.js" />
+    <Content Include="Scripts\Rc\UserInfo.js" />
+    <Content Include="Scripts\Rc\CookieUtil.js" />
+    <Content Include="Scripts\Rc\EventUtil.js" />
+    <Content Include="Scripts\Rc\TimeTable.js" />
+    <Content Include="Scripts\Rc\Verify.js" />
+    <Content Include="Scripts\Rc\XHR.js" />
+    <Content Include="Scripts\Rc\WorkVerify.js" />
+    <Content Include="Scripts\Tool\bootstrap-carousel.js" />
+    <Content Include="Scripts\Tool\calendar.js" />
+    <Content Include="Scripts\Tool\jquery.js" />
+    <Content Include="Views\Activity\Add.aspx" />
+    <Content Include="Views\Activity\Details_Visit.aspx" />
+    <Content Include="Views\Activity\Details.aspx" />
+    <Content Include="Views\Activity\Update.aspx" />
+    <Content Include="Views\Article\Detail.aspx" />
+    <Content Include="Views\Article\Index.aspx" />
+    <Content Include="Views\Department\Add.aspx" />
+    <Content Include="Views\Department\Details.aspx" />
+    <Content Include="Views\Department\Update.aspx" />
+    <Content Include="Views\Family\Add.aspx" />
+    <Content Include="Views\Family\Details.aspx" />
+    <Content Include="Views\Family\Update.aspx" />
+    <Content Include="Views\ImportantEvent\Add.aspx" />
+    <Content Include="Views\ImportantEvent\Details.aspx" />
+    <Content Include="Views\ImportantEvent\Update.aspx" />
+    <Content Include="Views\Notice\Add.aspx" />
+    <Content Include="Views\Notice\Details.aspx" />
+    <Content Include="Views\Notice\Update.aspx" />
+    <Content Include="Views\Other\Contact.aspx" />
+    <Content Include="Views\Other\Develop.aspx" />
+    <Content Include="Views\Other\Index.aspx" />
+    <Content Include="Views\Other\Message.aspx" />
+    <Content Include="Views\Shared\Base.aspx" />
+    <Content Include="Views\Shared\Bottom.ascx" />
+    <Content Include="Views\Shared\Grade.ascx" />
+    <Content Include="Views\Shared\Department.ascx" />
+    <Content Include="Views\Shared\Collage.ascx" />
+    <Content Include="Views\Shared\Header.ascx" />
+    <Content Include="Views\Shared\LoggedOut.aspx" />
+    <Content Include="Views\Shared\Nav.ascx" />
+    <Content Include="Views\Shared\Navbar.ascx" />
+    <Content Include="Views\Shared\NavStack.ascx" />
+    <Content Include="Views\Shared\Select_HasInfo.ascx" />
+    <Content Include="Views\Shared\Select_HasNoInfo.ascx" />
+    <Content Include="Views\Shared\Test.aspx" />
+    <Content Include="Views\Shared\Work.ascx" />
+    <Content Include="Views\TimeTable\Add.aspx" />
+    <Content Include="Views\TimeTable\Detail.aspx" />
+    <Content Include="Views\Shared\Success.aspx" />
+    <Content Include="Views\TimeTable\SearchResult.aspx" />
+    <Content Include="Views\TimeTable\Search.aspx" />
+    <Content Include="Views\TimeTable\Update.aspx" />
+    <Content Include="Views\TimeTable\UpdateSuccess.aspx" />
+    <Content Include="Views\User\PermissionNewUser.aspx" />
+    <Content Include="Views\User\Register.aspx" />
+    <Content Include="Views\User\Detail.aspx" />
+    <Content Include="Views\User\Login.aspx" />
+    <Content Include="Views\User\PersonalHome.aspx" />
+    <Content Include="Views\Visit\Apply.aspx" />
+    <Content Include="Views\Visit\Details.aspx" />
+    <Content Include="Views\Work\Add.aspx" />
+    <Content Include="Views\Work\Details.aspx" />
+    <Content Include="Views\Work\Update.aspx" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Views\Web.config" />
+    <Content Include="web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Scripts\Rc\VerifyNew.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349C5851-65DF-11DA-9384-00065B846F21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>18208</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/RedCross</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+    <MonoDevelop>
+      <Properties VerifyCodeBehindFields="true" VerifyCodeBehindEvents="true">
+        <XspParameters Port="8080" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="true" />
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+</Project>

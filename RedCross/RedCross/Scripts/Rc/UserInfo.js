@@ -1,0 +1,1 @@
+﻿var elm=document.getElementById("hello");var d=new Date();var h=d.getHours();var regard=null;if(h>=3&&h<11){elm.innerText="早上好";regard=",努力学习,日积月累. ^_^"}else{if(h>=11&&h<15){elm.innerText="中午好";regard=",饭后可以小休一下. ^_^"}else{if(h>=15&&h<19){elm.innerText="下午好";regard=",努力学习,日积月累. ^_^"}else{if(h>=19||h<3){elm.innerText="晚上好";regard=",劳累一天,记得休息. ^_^"}}}}elm.innerText+=regard;

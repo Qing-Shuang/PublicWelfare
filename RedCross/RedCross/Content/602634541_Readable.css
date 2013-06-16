@@ -1,0 +1,163 @@
+﻿/* File Created: 八月 4, 2012 */
+
+ul {
+  font-family: Arial, Verdana;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul li {
+  display: block;
+  position: relative;
+  float: left;
+}
+li ul { display: none; }
+ul li a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  border-top: 1px solid #ffffff;
+  padding: 5px 15px 5px 15px;
+  background: #2C5463;
+  margin-left: 1px;
+  white-space: nowrap;
+}
+ul li a:hover { background: #617F8A; }
+li:hover ul {
+  display: block;
+  position: absolute;
+}
+li:hover li {
+  float: none;
+  font-size: 11px;
+}
+li:hover a { background: #617F8A; }
+li:hover li a:hover { background: #95A9B1; }
+
+
+/*暂留*/
+body
+{
+    margin:0 auto;
+    padding:0;   
+    font-family:Arial,新宋体,微软雅黑,MS PGothic,宋体,黑体; 
+    font-size:96%;/*96%*/
+    line-height:1.7em;
+}
+
+a:link { color: #1F5790; text-decoration:none; }
+a:visited { color: #1F5790 ;text-decoration:none; }
+a:hover { color: #ab0000; text-decoration:none;}
+a:focus, a:active { color: #c50000; background-color: #ddd; text-decoration:none;}
+
+#header
+{
+    clear: both;
+    height: 80px;
+    padding:0 52px;
+    border-bottom:2px solid #7F8486;/*7F8486*/
+    background:  url(/Images/banner_bg.png) repeat-x;    
+}
+
+#header  #tabwrapper
+{
+    position:absolute;
+    bottom:0;
+    right:52px;  
+    top:10px;
+    height:30px;
+}
+
+#header a
+{
+    color:#fff;
+}
+
+/*menu*/
+#menu_wrapper
+{
+        clear:both; 
+        height:43px;
+        border-top: 1px solid #F5CB66;/*7F8486*/
+        border-bottom: 1px solid #d0d0d0;/*d0d0d0*/
+        background-color: #eee;  
+        /*background:url(/Images/divider_bg.png) repeat-x;*/
+        padding:0;
+}
+
+#menu 
+{
+			    margin:0;
+				font-family: Arial;
+				font-weight: bold;
+			    padding-left:52px;
+				list-style-type: none;
+				font-size: 15px;
+				height: 40px;
+				border-top: 2px solid #eee;
+}
+#menu li {
+				float: left;
+				margin: 0;	
+				width:110px;		
+}
+#menu li a {
+				text-decoration: none;
+				display: block;
+				padding: 0 20px;
+				line-height: 40px;
+				color: #666;
+				color: #1F5790;
+}
+#menu li a:hover, #menu li.active a {
+				background-color: #f5f5f5; 
+				border-bottom: 1px solid #F30233; /*DDD*/ /*F30233*/
+				color: #c50000;/*999*/
+}
+
+#divider
+{
+    clear:both; 
+    height:53px;
+	background: #000 url(/Images/divider_bg.png) repeat-x;
+	border-top: 1px solid #7F8486;/*7F8486*/
+	border-bottom: 1px solid #7F8486;
+}
+
+#divider  #left
+{
+    position:absolute;
+    bottom:0;
+    left:52px;  
+    top:110px;
+    height:25px;
+    font-size:130%;
+    font-weight:bold;
+}
+
+#divider a
+{
+    margin-right:7px;
+    color: #d0d0d0;  
+    color:#fddcba;
+    padding:8px;
+}  
+
+#divider a:hover,a:focus, a:active
+{
+    background-color:#F5CB66;
+    color:#fff;    
+}
+
+#select
+{
+    clear:both;
+    padding:10px 0;
+    margin:30px 52px ;
+    border-top:1px solid #7F8486;
+    border-bottom:1px solid #7F8486;
+    text-align:right;
+}
+
+

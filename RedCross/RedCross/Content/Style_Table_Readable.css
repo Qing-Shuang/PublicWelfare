@@ -1,0 +1,136 @@
+﻿/*Table*/
+#main_content_table
+{
+    margin:20px 60px 40px;  
+}
+
+.blue
+{
+	background-color:#b7ddf2;	
+}
+
+.white
+{
+	background-color:#FFFFFF;	
+}
+
+#userInfoForTimeTable
+{
+    margin:0 0 10px;    
+}
+
+#userInfoForTimeTable label
+{
+    margin-left:10px;
+}
+
+#userInfoForTimeTable select
+{
+    width:120px;    
+}
+
+.timeTable
+{
+    border: 1px solid #ddd;    
+    border-collapse: collapse;
+    width:100%;
+    text-align:center;
+    margin:0;
+}
+
+.timeTable tr.header
+{
+    background-color:#049cdb
+}
+
+.timeTable tr.header td
+{
+    width:12%;
+}
+
+.timeTable tr.header td.firstcell
+{
+    background-color:#FFFFFF    
+}
+
+.timeTable td
+{
+    border:1px solid #ddd;
+}
+
+.timeTable td.firstcolumn
+{
+    background-color:#049cdb;
+}
+
+.userSelected
+{
+    text-align:center;
+    border: 1px solid #ddd;    
+    border-collapse: collapse;
+    width:50%;
+    margin:0 0 10px 0;
+    padding:0;
+}
+
+.userSelected td
+{
+    width:100px;
+    border: 1px solid #ddd;    
+}
+
+#main_content_table_PermisNewUser
+{
+    margin:20px auto 30px;  
+    width:900px;
+}
+
+.permisNewUser
+{
+    text-align:center;
+    border: 1px solid #7F8486;    
+    border-collapse: collapse;
+    margin:0 0 10px;
+}
+
+.permisNewUser tr.header
+{
+    background-color:#eee;
+    /*color:#ffffff;*/
+}
+
+.permisNewUser td
+{
+    height:30px;
+    border:1px solid #7F8486;
+    color:#1F5790;
+}
+
+.permisNewUser tr.header td
+{
+    background-color:#1F5790;
+    color:#ffffff;
+}
+
+.permisNewUser td.w130
+{
+    width:130px;
+}
+
+.permisNewUser td.w120
+{
+    width:120px;
+}
+
+.permisNewUser td.w100
+{
+    width:100px;
+}
+
+.permisNewUser td.w60
+{
+    width:50px;
+}
+
+/*margin:外边距*/
+/*padding:内边距*/
